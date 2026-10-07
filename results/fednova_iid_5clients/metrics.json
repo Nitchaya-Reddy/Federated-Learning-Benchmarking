@@ -1,0 +1,1621 @@
+{
+  "algo": "fednova",
+  "model": "cnn",
+  "lr_schedule": "none",
+  "partition": "iid",
+  "num_clients": 5,
+  "rounds": 100,
+  "local_epochs": 5,
+  "quant_bits": 32,
+  "prune_ratio": 0.0,
+  "final_test_acc": 0.8776,
+  "final_test_loss": 0.358,
+  "total_comm_bytes": 1335646000,
+  "total_comm_GB": 1.3356,
+  "total_time_s": 5797.7,
+  "round_to_round_var": 0.001375,
+  "avg_fairness_std": 0.0022,
+  "final_fairness_std": 0.0021,
+  "history": [
+    {
+      "round": 1,
+      "test_acc": 0.2175,
+      "test_loss": 2.2306,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 13356460,
+      "round_time_s": 58.12,
+      "client_accs": [
+        0.1756,
+        0.1931,
+        0.1871,
+        0.184,
+        0.1874
+      ],
+      "fairness_std": 0.0057
+    },
+    {
+      "round": 2,
+      "test_acc": 0.5776,
+      "test_loss": 1.3516,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 26712920,
+      "round_time_s": 58.72,
+      "client_accs": [
+        0.5375,
+        0.547,
+        0.5469,
+        0.5347,
+        0.5463
+      ],
+      "fairness_std": 0.0053
+    },
+    {
+      "round": 3,
+      "test_acc": 0.6545,
+      "test_loss": 1.0098,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 40069380,
+      "round_time_s": 57.04,
+      "client_accs": [
+        0.6199,
+        0.6247,
+        0.6311,
+        0.6185,
+        0.6286
+      ],
+      "fairness_std": 0.0048
+    },
+    {
+      "round": 4,
+      "test_acc": 0.7025,
+      "test_loss": 0.8597,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 53425840,
+      "round_time_s": 57.69,
+      "client_accs": [
+        0.6735,
+        0.6713,
+        0.6774,
+        0.6753,
+        0.6737
+      ],
+      "fairness_std": 0.002
+    },
+    {
+      "round": 5,
+      "test_acc": 0.7312,
+      "test_loss": 0.7751,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 66782300,
+      "round_time_s": 58.72,
+      "client_accs": [
+        0.7019,
+        0.7014,
+        0.7089,
+        0.7007,
+        0.7099
+      ],
+      "fairness_std": 0.004
+    },
+    {
+      "round": 6,
+      "test_acc": 0.7486,
+      "test_loss": 0.7229,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 80138760,
+      "round_time_s": 56.76,
+      "client_accs": [
+        0.73,
+        0.7322,
+        0.7378,
+        0.7292,
+        0.734
+      ],
+      "fairness_std": 0.0031
+    },
+    {
+      "round": 7,
+      "test_acc": 0.7703,
+      "test_loss": 0.6617,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 93495220,
+      "round_time_s": 57.62,
+      "client_accs": [
+        0.7562,
+        0.7554,
+        0.7606,
+        0.756,
+        0.7535
+      ],
+      "fairness_std": 0.0023
+    },
+    {
+      "round": 8,
+      "test_acc": 0.7835,
+      "test_loss": 0.6342,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 106851680,
+      "round_time_s": 58.76,
+      "client_accs": [
+        0.7678,
+        0.7665,
+        0.7704,
+        0.7664,
+        0.7696
+      ],
+      "fairness_std": 0.0016
+    },
+    {
+      "round": 9,
+      "test_acc": 0.7926,
+      "test_loss": 0.6072,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 120208140,
+      "round_time_s": 57.69,
+      "client_accs": [
+        0.7808,
+        0.7728,
+        0.781,
+        0.7802,
+        0.7792
+      ],
+      "fairness_std": 0.0031
+    },
+    {
+      "round": 10,
+      "test_acc": 0.7995,
+      "test_loss": 0.5849,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 133564600,
+      "round_time_s": 59.03,
+      "client_accs": [
+        0.7844,
+        0.786,
+        0.7949,
+        0.7984,
+        0.7928
+      ],
+      "fairness_std": 0.0053
+    },
+    {
+      "round": 11,
+      "test_acc": 0.8046,
+      "test_loss": 0.5707,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 146921060,
+      "round_time_s": 56.5,
+      "client_accs": [
+        0.7996,
+        0.8,
+        0.7999,
+        0.7982,
+        0.7997
+      ],
+      "fairness_std": 0.0007
+    },
+    {
+      "round": 12,
+      "test_acc": 0.8127,
+      "test_loss": 0.5507,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 160277520,
+      "round_time_s": 58.11,
+      "client_accs": [
+        0.8049,
+        0.8082,
+        0.8092,
+        0.815,
+        0.8061
+      ],
+      "fairness_std": 0.0035
+    },
+    {
+      "round": 13,
+      "test_acc": 0.8199,
+      "test_loss": 0.5279,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 173633980,
+      "round_time_s": 58.19,
+      "client_accs": [
+        0.8177,
+        0.8135,
+        0.8124,
+        0.8161,
+        0.812
+      ],
+      "fairness_std": 0.0022
+    },
+    {
+      "round": 14,
+      "test_acc": 0.8192,
+      "test_loss": 0.5268,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 186990440,
+      "round_time_s": 56.84,
+      "client_accs": [
+        0.8163,
+        0.8153,
+        0.8241,
+        0.8226,
+        0.8183
+      ],
+      "fairness_std": 0.0035
+    },
+    {
+      "round": 15,
+      "test_acc": 0.8243,
+      "test_loss": 0.5104,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 200346900,
+      "round_time_s": 58.85,
+      "client_accs": [
+        0.8253,
+        0.8282,
+        0.8273,
+        0.8268,
+        0.8275
+      ],
+      "fairness_std": 0.001
+    },
+    {
+      "round": 16,
+      "test_acc": 0.8298,
+      "test_loss": 0.5039,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 213703360,
+      "round_time_s": 57.48,
+      "client_accs": [
+        0.8278,
+        0.8241,
+        0.8338,
+        0.8261,
+        0.831
+      ],
+      "fairness_std": 0.0035
+    },
+    {
+      "round": 17,
+      "test_acc": 0.8314,
+      "test_loss": 0.4943,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 227059820,
+      "round_time_s": 58.03,
+      "client_accs": [
+        0.8298,
+        0.829,
+        0.8325,
+        0.8326,
+        0.8306
+      ],
+      "fairness_std": 0.0014
+    },
+    {
+      "round": 18,
+      "test_acc": 0.8357,
+      "test_loss": 0.4798,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 240416280,
+      "round_time_s": 58.59,
+      "client_accs": [
+        0.8348,
+        0.8383,
+        0.8411,
+        0.8403,
+        0.8372
+      ],
+      "fairness_std": 0.0022
+    },
+    {
+      "round": 19,
+      "test_acc": 0.8375,
+      "test_loss": 0.4832,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 253772740,
+      "round_time_s": 57.17,
+      "client_accs": [
+        0.8386,
+        0.8379,
+        0.8448,
+        0.8437,
+        0.8372
+      ],
+      "fairness_std": 0.0032
+    },
+    {
+      "round": 20,
+      "test_acc": 0.84,
+      "test_loss": 0.4724,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 267129200,
+      "round_time_s": 59.13,
+      "client_accs": [
+        0.8455,
+        0.8449,
+        0.8449,
+        0.8434,
+        0.8403
+      ],
+      "fairness_std": 0.0019
+    },
+    {
+      "round": 21,
+      "test_acc": 0.8429,
+      "test_loss": 0.4661,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 280485660,
+      "round_time_s": 56.96,
+      "client_accs": [
+        0.8459,
+        0.8496,
+        0.8512,
+        0.8489,
+        0.8452
+      ],
+      "fairness_std": 0.0023
+    },
+    {
+      "round": 22,
+      "test_acc": 0.845,
+      "test_loss": 0.4544,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 293842120,
+      "round_time_s": 59.44,
+      "client_accs": [
+        0.8461,
+        0.8471,
+        0.8522,
+        0.8505,
+        0.8467
+      ],
+      "fairness_std": 0.0024
+    },
+    {
+      "round": 23,
+      "test_acc": 0.8463,
+      "test_loss": 0.4522,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 307198580,
+      "round_time_s": 56.61,
+      "client_accs": [
+        0.8529,
+        0.8505,
+        0.853,
+        0.857,
+        0.852
+      ],
+      "fairness_std": 0.0022
+    },
+    {
+      "round": 24,
+      "test_acc": 0.8459,
+      "test_loss": 0.4489,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 320555040,
+      "round_time_s": 59.46,
+      "client_accs": [
+        0.8507,
+        0.8529,
+        0.8527,
+        0.8545,
+        0.8521
+      ],
+      "fairness_std": 0.0012
+    },
+    {
+      "round": 25,
+      "test_acc": 0.8469,
+      "test_loss": 0.4466,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 333911500,
+      "round_time_s": 57.46,
+      "client_accs": [
+        0.8558,
+        0.8602,
+        0.8583,
+        0.8548,
+        0.8549
+      ],
+      "fairness_std": 0.0021
+    },
+    {
+      "round": 26,
+      "test_acc": 0.8484,
+      "test_loss": 0.4413,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 347267960,
+      "round_time_s": 58.56,
+      "client_accs": [
+        0.8634,
+        0.8553,
+        0.856,
+        0.8609,
+        0.8572
+      ],
+      "fairness_std": 0.0031
+    },
+    {
+      "round": 27,
+      "test_acc": 0.8496,
+      "test_loss": 0.4378,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 360624420,
+      "round_time_s": 57.76,
+      "client_accs": [
+        0.8568,
+        0.8591,
+        0.8589,
+        0.8572,
+        0.8554
+      ],
+      "fairness_std": 0.0014
+    },
+    {
+      "round": 28,
+      "test_acc": 0.8498,
+      "test_loss": 0.441,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 373980880,
+      "round_time_s": 58.18,
+      "client_accs": [
+        0.8539,
+        0.8564,
+        0.8596,
+        0.8578,
+        0.855
+      ],
+      "fairness_std": 0.002
+    },
+    {
+      "round": 29,
+      "test_acc": 0.8571,
+      "test_loss": 0.4163,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 387337340,
+      "round_time_s": 58.54,
+      "client_accs": [
+        0.8646,
+        0.8639,
+        0.8642,
+        0.8694,
+        0.8601
+      ],
+      "fairness_std": 0.003
+    },
+    {
+      "round": 30,
+      "test_acc": 0.8537,
+      "test_loss": 0.427,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 400693800,
+      "round_time_s": 56.74,
+      "client_accs": [
+        0.8652,
+        0.8635,
+        0.8651,
+        0.8655,
+        0.8606
+      ],
+      "fairness_std": 0.0018
+    },
+    {
+      "round": 31,
+      "test_acc": 0.856,
+      "test_loss": 0.4224,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 414050260,
+      "round_time_s": 59.73,
+      "client_accs": [
+        0.8629,
+        0.8644,
+        0.8659,
+        0.8643,
+        0.8647
+      ],
+      "fairness_std": 0.001
+    },
+    {
+      "round": 32,
+      "test_acc": 0.8551,
+      "test_loss": 0.4224,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 427406720,
+      "round_time_s": 56.94,
+      "client_accs": [
+        0.8709,
+        0.8641,
+        0.8672,
+        0.8645,
+        0.8653
+      ],
+      "fairness_std": 0.0025
+    },
+    {
+      "round": 33,
+      "test_acc": 0.8562,
+      "test_loss": 0.4137,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 440763180,
+      "round_time_s": 58.18,
+      "client_accs": [
+        0.8678,
+        0.8691,
+        0.8663,
+        0.8665,
+        0.8701
+      ],
+      "fairness_std": 0.0015
+    },
+    {
+      "round": 34,
+      "test_acc": 0.8577,
+      "test_loss": 0.4155,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 454119640,
+      "round_time_s": 58.59,
+      "client_accs": [
+        0.869,
+        0.8688,
+        0.8671,
+        0.8688,
+        0.8664
+      ],
+      "fairness_std": 0.0011
+    },
+    {
+      "round": 35,
+      "test_acc": 0.8583,
+      "test_loss": 0.4163,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 467476100,
+      "round_time_s": 57.54,
+      "client_accs": [
+        0.868,
+        0.8702,
+        0.8724,
+        0.8716,
+        0.87
+      ],
+      "fairness_std": 0.0015
+    },
+    {
+      "round": 36,
+      "test_acc": 0.8569,
+      "test_loss": 0.4114,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 480832560,
+      "round_time_s": 58.8,
+      "client_accs": [
+        0.8694,
+        0.8714,
+        0.8717,
+        0.8717,
+        0.87
+      ],
+      "fairness_std": 0.001
+    },
+    {
+      "round": 37,
+      "test_acc": 0.8589,
+      "test_loss": 0.4085,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 494189020,
+      "round_time_s": 57.11,
+      "client_accs": [
+        0.8748,
+        0.8736,
+        0.8725,
+        0.8722,
+        0.872
+      ],
+      "fairness_std": 0.001
+    },
+    {
+      "round": 38,
+      "test_acc": 0.8584,
+      "test_loss": 0.4085,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 507545480,
+      "round_time_s": 58.49,
+      "client_accs": [
+        0.8693,
+        0.8688,
+        0.8694,
+        0.8721,
+        0.8651
+      ],
+      "fairness_std": 0.0022
+    },
+    {
+      "round": 39,
+      "test_acc": 0.8637,
+      "test_loss": 0.4015,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 520901940,
+      "round_time_s": 58.15,
+      "client_accs": [
+        0.8732,
+        0.8709,
+        0.8761,
+        0.8761,
+        0.8741
+      ],
+      "fairness_std": 0.002
+    },
+    {
+      "round": 40,
+      "test_acc": 0.863,
+      "test_loss": 0.3946,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 534258400,
+      "round_time_s": 57.76,
+      "client_accs": [
+        0.8757,
+        0.8784,
+        0.8739,
+        0.8739,
+        0.8698
+      ],
+      "fairness_std": 0.0028
+    },
+    {
+      "round": 41,
+      "test_acc": 0.8633,
+      "test_loss": 0.4028,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 547614860,
+      "round_time_s": 58.17,
+      "client_accs": [
+        0.8732,
+        0.8757,
+        0.8769,
+        0.8736,
+        0.8749
+      ],
+      "fairness_std": 0.0014
+    },
+    {
+      "round": 42,
+      "test_acc": 0.8596,
+      "test_loss": 0.4094,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 560971320,
+      "round_time_s": 57.34,
+      "client_accs": [
+        0.8742,
+        0.8742,
+        0.8745,
+        0.8675,
+        0.8713
+      ],
+      "fairness_std": 0.0027
+    },
+    {
+      "round": 43,
+      "test_acc": 0.8612,
+      "test_loss": 0.4026,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 574327780,
+      "round_time_s": 57.71,
+      "client_accs": [
+        0.8768,
+        0.8774,
+        0.8752,
+        0.8761,
+        0.8739
+      ],
+      "fairness_std": 0.0012
+    },
+    {
+      "round": 44,
+      "test_acc": 0.8632,
+      "test_loss": 0.3961,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 587684240,
+      "round_time_s": 58.9,
+      "client_accs": [
+        0.8769,
+        0.8787,
+        0.8774,
+        0.8785,
+        0.8757
+      ],
+      "fairness_std": 0.0011
+    },
+    {
+      "round": 45,
+      "test_acc": 0.8649,
+      "test_loss": 0.3915,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 601040700,
+      "round_time_s": 57.18,
+      "client_accs": [
+        0.8789,
+        0.8791,
+        0.8815,
+        0.8786,
+        0.8782
+      ],
+      "fairness_std": 0.0012
+    },
+    {
+      "round": 46,
+      "test_acc": 0.8624,
+      "test_loss": 0.4014,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 614397160,
+      "round_time_s": 57.53,
+      "client_accs": [
+        0.8759,
+        0.8756,
+        0.8792,
+        0.8768,
+        0.8721
+      ],
+      "fairness_std": 0.0023
+    },
+    {
+      "round": 47,
+      "test_acc": 0.8663,
+      "test_loss": 0.389,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 627753620,
+      "round_time_s": 59.24,
+      "client_accs": [
+        0.8804,
+        0.8803,
+        0.8834,
+        0.8821,
+        0.8808
+      ],
+      "fairness_std": 0.0012
+    },
+    {
+      "round": 48,
+      "test_acc": 0.8666,
+      "test_loss": 0.3928,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 641110080,
+      "round_time_s": 58.41,
+      "client_accs": [
+        0.8798,
+        0.8817,
+        0.88,
+        0.8798,
+        0.8772
+      ],
+      "fairness_std": 0.0014
+    },
+    {
+      "round": 49,
+      "test_acc": 0.869,
+      "test_loss": 0.3849,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 654466540,
+      "round_time_s": 58.22,
+      "client_accs": [
+        0.8816,
+        0.8833,
+        0.8855,
+        0.8809,
+        0.8785
+      ],
+      "fairness_std": 0.0023
+    },
+    {
+      "round": 50,
+      "test_acc": 0.8664,
+      "test_loss": 0.4009,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 667823000,
+      "round_time_s": 56.89,
+      "client_accs": [
+        0.8804,
+        0.8811,
+        0.8807,
+        0.8787,
+        0.8784
+      ],
+      "fairness_std": 0.0011
+    },
+    {
+      "round": 51,
+      "test_acc": 0.8712,
+      "test_loss": 0.3823,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 681179460,
+      "round_time_s": 58.76,
+      "client_accs": [
+        0.884,
+        0.8797,
+        0.8885,
+        0.8829,
+        0.88
+      ],
+      "fairness_std": 0.0032
+    },
+    {
+      "round": 52,
+      "test_acc": 0.8691,
+      "test_loss": 0.3883,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 694535920,
+      "round_time_s": 57.52,
+      "client_accs": [
+        0.8826,
+        0.8828,
+        0.8858,
+        0.8811,
+        0.8753
+      ],
+      "fairness_std": 0.0035
+    },
+    {
+      "round": 53,
+      "test_acc": 0.8652,
+      "test_loss": 0.3958,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 707892380,
+      "round_time_s": 57.44,
+      "client_accs": [
+        0.8826,
+        0.8805,
+        0.8836,
+        0.878,
+        0.8783
+      ],
+      "fairness_std": 0.0022
+    },
+    {
+      "round": 54,
+      "test_acc": 0.87,
+      "test_loss": 0.3834,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 721248840,
+      "round_time_s": 58.89,
+      "client_accs": [
+        0.8843,
+        0.8847,
+        0.8846,
+        0.8855,
+        0.8824
+      ],
+      "fairness_std": 0.001
+    },
+    {
+      "round": 55,
+      "test_acc": 0.8707,
+      "test_loss": 0.3795,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 734605300,
+      "round_time_s": 56.95,
+      "client_accs": [
+        0.8825,
+        0.8843,
+        0.8889,
+        0.8811,
+        0.8816
+      ],
+      "fairness_std": 0.0028
+    },
+    {
+      "round": 56,
+      "test_acc": 0.8669,
+      "test_loss": 0.3853,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 747961760,
+      "round_time_s": 57.44,
+      "client_accs": [
+        0.8824,
+        0.883,
+        0.8858,
+        0.8878,
+        0.882
+      ],
+      "fairness_std": 0.0022
+    },
+    {
+      "round": 57,
+      "test_acc": 0.8674,
+      "test_loss": 0.3801,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 761318220,
+      "round_time_s": 58.57,
+      "client_accs": [
+        0.8825,
+        0.8823,
+        0.8848,
+        0.8869,
+        0.8834
+      ],
+      "fairness_std": 0.0017
+    },
+    {
+      "round": 58,
+      "test_acc": 0.8704,
+      "test_loss": 0.3859,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 774674680,
+      "round_time_s": 57.25,
+      "client_accs": [
+        0.8819,
+        0.8832,
+        0.8826,
+        0.8829,
+        0.8814
+      ],
+      "fairness_std": 0.0007
+    },
+    {
+      "round": 59,
+      "test_acc": 0.8709,
+      "test_loss": 0.3804,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 788031140,
+      "round_time_s": 58.25,
+      "client_accs": [
+        0.8839,
+        0.8899,
+        0.887,
+        0.8855,
+        0.8845
+      ],
+      "fairness_std": 0.0021
+    },
+    {
+      "round": 60,
+      "test_acc": 0.8696,
+      "test_loss": 0.3796,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 801387600,
+      "round_time_s": 58.66,
+      "client_accs": [
+        0.8857,
+        0.884,
+        0.8831,
+        0.885,
+        0.8823
+      ],
+      "fairness_std": 0.0012
+    },
+    {
+      "round": 61,
+      "test_acc": 0.8692,
+      "test_loss": 0.3792,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 814744060,
+      "round_time_s": 57.59,
+      "client_accs": [
+        0.8878,
+        0.888,
+        0.8883,
+        0.8868,
+        0.8818
+      ],
+      "fairness_std": 0.0024
+    },
+    {
+      "round": 62,
+      "test_acc": 0.8726,
+      "test_loss": 0.3724,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 828100520,
+      "round_time_s": 58.8,
+      "client_accs": [
+        0.8884,
+        0.8879,
+        0.8903,
+        0.8861,
+        0.8811
+      ],
+      "fairness_std": 0.0031
+    },
+    {
+      "round": 63,
+      "test_acc": 0.8715,
+      "test_loss": 0.3791,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 841456980,
+      "round_time_s": 56.84,
+      "client_accs": [
+        0.8833,
+        0.8826,
+        0.8905,
+        0.8867,
+        0.885
+      ],
+      "fairness_std": 0.0028
+    },
+    {
+      "round": 64,
+      "test_acc": 0.8719,
+      "test_loss": 0.3727,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 854813440,
+      "round_time_s": 57.39,
+      "client_accs": [
+        0.8865,
+        0.8923,
+        0.8914,
+        0.8876,
+        0.8831
+      ],
+      "fairness_std": 0.0034
+    },
+    {
+      "round": 65,
+      "test_acc": 0.8718,
+      "test_loss": 0.3736,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 868169900,
+      "round_time_s": 59.07,
+      "client_accs": [
+        0.8858,
+        0.8906,
+        0.8911,
+        0.8867,
+        0.8853
+      ],
+      "fairness_std": 0.0025
+    },
+    {
+      "round": 66,
+      "test_acc": 0.8735,
+      "test_loss": 0.3733,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 881526360,
+      "round_time_s": 57.02,
+      "client_accs": [
+        0.8867,
+        0.8866,
+        0.8908,
+        0.8898,
+        0.8892
+      ],
+      "fairness_std": 0.0017
+    },
+    {
+      "round": 67,
+      "test_acc": 0.8719,
+      "test_loss": 0.3708,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 894882820,
+      "round_time_s": 57.7,
+      "client_accs": [
+        0.8868,
+        0.882,
+        0.8894,
+        0.8894,
+        0.8858
+      ],
+      "fairness_std": 0.0027
+    },
+    {
+      "round": 68,
+      "test_acc": 0.8719,
+      "test_loss": 0.3736,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 908239280,
+      "round_time_s": 58.86,
+      "client_accs": [
+        0.8874,
+        0.8864,
+        0.8908,
+        0.8836,
+        0.8852
+      ],
+      "fairness_std": 0.0024
+    },
+    {
+      "round": 69,
+      "test_acc": 0.8701,
+      "test_loss": 0.3752,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 921595740,
+      "round_time_s": 56.62,
+      "client_accs": [
+        0.8903,
+        0.8895,
+        0.8938,
+        0.8879,
+        0.8844
+      ],
+      "fairness_std": 0.0031
+    },
+    {
+      "round": 70,
+      "test_acc": 0.8726,
+      "test_loss": 0.3692,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 934952200,
+      "round_time_s": 59.88,
+      "client_accs": [
+        0.887,
+        0.891,
+        0.8927,
+        0.8908,
+        0.8842
+      ],
+      "fairness_std": 0.0031
+    },
+    {
+      "round": 71,
+      "test_acc": 0.8716,
+      "test_loss": 0.3762,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 948308660,
+      "round_time_s": 58.08,
+      "client_accs": [
+        0.8849,
+        0.8861,
+        0.8895,
+        0.8882,
+        0.8859
+      ],
+      "fairness_std": 0.0017
+    },
+    {
+      "round": 72,
+      "test_acc": 0.8743,
+      "test_loss": 0.3709,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 961665120,
+      "round_time_s": 56.79,
+      "client_accs": [
+        0.8889,
+        0.8908,
+        0.8864,
+        0.8862,
+        0.8881
+      ],
+      "fairness_std": 0.0017
+    },
+    {
+      "round": 73,
+      "test_acc": 0.8744,
+      "test_loss": 0.3659,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 975021580,
+      "round_time_s": 59.16,
+      "client_accs": [
+        0.8913,
+        0.8914,
+        0.8921,
+        0.8915,
+        0.885
+      ],
+      "fairness_std": 0.0026
+    },
+    {
+      "round": 74,
+      "test_acc": 0.8742,
+      "test_loss": 0.3687,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 988378040,
+      "round_time_s": 57.25,
+      "client_accs": [
+        0.8897,
+        0.8912,
+        0.8905,
+        0.8901,
+        0.8893
+      ],
+      "fairness_std": 0.0007
+    },
+    {
+      "round": 75,
+      "test_acc": 0.8759,
+      "test_loss": 0.3687,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 1001734500,
+      "round_time_s": 57.61,
+      "client_accs": [
+        0.8899,
+        0.8918,
+        0.8922,
+        0.8892,
+        0.8901
+      ],
+      "fairness_std": 0.0012
+    },
+    {
+      "round": 76,
+      "test_acc": 0.873,
+      "test_loss": 0.3714,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 1015090960,
+      "round_time_s": 59.26,
+      "client_accs": [
+        0.891,
+        0.8853,
+        0.8909,
+        0.8899,
+        0.89
+      ],
+      "fairness_std": 0.0021
+    },
+    {
+      "round": 77,
+      "test_acc": 0.8715,
+      "test_loss": 0.3701,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 1028447420,
+      "round_time_s": 56.89,
+      "client_accs": [
+        0.8908,
+        0.8929,
+        0.8915,
+        0.891,
+        0.8887
+      ],
+      "fairness_std": 0.0014
+    },
+    {
+      "round": 78,
+      "test_acc": 0.8668,
+      "test_loss": 0.3844,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 1041803880,
+      "round_time_s": 58.19,
+      "client_accs": [
+        0.8881,
+        0.8856,
+        0.8826,
+        0.8818,
+        0.8815
+      ],
+      "fairness_std": 0.0025
+    },
+    {
+      "round": 79,
+      "test_acc": 0.8738,
+      "test_loss": 0.3677,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 1055160340,
+      "round_time_s": 58.28,
+      "client_accs": [
+        0.8928,
+        0.89,
+        0.8912,
+        0.8902,
+        0.8832
+      ],
+      "fairness_std": 0.0033
+    },
+    {
+      "round": 80,
+      "test_acc": 0.8746,
+      "test_loss": 0.3658,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 1068516800,
+      "round_time_s": 56.91,
+      "client_accs": [
+        0.8936,
+        0.8944,
+        0.8932,
+        0.8924,
+        0.8903
+      ],
+      "fairness_std": 0.0014
+    },
+    {
+      "round": 81,
+      "test_acc": 0.8763,
+      "test_loss": 0.3636,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 1081873260,
+      "round_time_s": 58.71,
+      "client_accs": [
+        0.8911,
+        0.8937,
+        0.8942,
+        0.8923,
+        0.8932
+      ],
+      "fairness_std": 0.0011
+    },
+    {
+      "round": 82,
+      "test_acc": 0.8756,
+      "test_loss": 0.365,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 1095229720,
+      "round_time_s": 57.79,
+      "client_accs": [
+        0.8908,
+        0.8899,
+        0.8908,
+        0.8912,
+        0.8889
+      ],
+      "fairness_std": 0.0008
+    },
+    {
+      "round": 83,
+      "test_acc": 0.8743,
+      "test_loss": 0.366,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 1108586180,
+      "round_time_s": 60.45,
+      "client_accs": [
+        0.8925,
+        0.8942,
+        0.8967,
+        0.8922,
+        0.8884
+      ],
+      "fairness_std": 0.0027
+    },
+    {
+      "round": 84,
+      "test_acc": 0.8716,
+      "test_loss": 0.372,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 1121942640,
+      "round_time_s": 57.68,
+      "client_accs": [
+        0.887,
+        0.8867,
+        0.89,
+        0.891,
+        0.8865
+      ],
+      "fairness_std": 0.0019
+    },
+    {
+      "round": 85,
+      "test_acc": 0.8736,
+      "test_loss": 0.3635,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 1135299100,
+      "round_time_s": 57.5,
+      "client_accs": [
+        0.8946,
+        0.8937,
+        0.8925,
+        0.8877,
+        0.8889
+      ],
+      "fairness_std": 0.0027
+    },
+    {
+      "round": 86,
+      "test_acc": 0.8771,
+      "test_loss": 0.3618,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 1148655560,
+      "round_time_s": 58.52,
+      "client_accs": [
+        0.8931,
+        0.8971,
+        0.8967,
+        0.8945,
+        0.8931
+      ],
+      "fairness_std": 0.0017
+    },
+    {
+      "round": 87,
+      "test_acc": 0.8738,
+      "test_loss": 0.3659,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 1162012020,
+      "round_time_s": 56.93,
+      "client_accs": [
+        0.8956,
+        0.8878,
+        0.8965,
+        0.8874,
+        0.889
+      ],
+      "fairness_std": 0.004
+    },
+    {
+      "round": 88,
+      "test_acc": 0.8746,
+      "test_loss": 0.363,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 1175368480,
+      "round_time_s": 58.35,
+      "client_accs": [
+        0.8934,
+        0.8911,
+        0.8943,
+        0.8917,
+        0.8906
+      ],
+      "fairness_std": 0.0014
+    },
+    {
+      "round": 89,
+      "test_acc": 0.875,
+      "test_loss": 0.3632,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 1188724940,
+      "round_time_s": 58.0,
+      "client_accs": [
+        0.8927,
+        0.8911,
+        0.8991,
+        0.8959,
+        0.8917
+      ],
+      "fairness_std": 0.003
+    },
+    {
+      "round": 90,
+      "test_acc": 0.8774,
+      "test_loss": 0.3589,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 1202081400,
+      "round_time_s": 57.28,
+      "client_accs": [
+        0.8946,
+        0.8908,
+        0.8988,
+        0.8934,
+        0.8916
+      ],
+      "fairness_std": 0.0028
+    },
+    {
+      "round": 91,
+      "test_acc": 0.8777,
+      "test_loss": 0.3619,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 1215437860,
+      "round_time_s": 59.06,
+      "client_accs": [
+        0.8908,
+        0.8963,
+        0.8979,
+        0.8932,
+        0.8923
+      ],
+      "fairness_std": 0.0026
+    },
+    {
+      "round": 92,
+      "test_acc": 0.8771,
+      "test_loss": 0.3564,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 1228794320,
+      "round_time_s": 56.94,
+      "client_accs": [
+        0.8921,
+        0.8971,
+        0.8961,
+        0.8935,
+        0.893
+      ],
+      "fairness_std": 0.0019
+    },
+    {
+      "round": 93,
+      "test_acc": 0.8775,
+      "test_loss": 0.3583,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 1242150780,
+      "round_time_s": 58.06,
+      "client_accs": [
+        0.8966,
+        0.8975,
+        0.9002,
+        0.8925,
+        0.8953
+      ],
+      "fairness_std": 0.0025
+    },
+    {
+      "round": 94,
+      "test_acc": 0.8777,
+      "test_loss": 0.3637,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 1255507240,
+      "round_time_s": 58.4,
+      "client_accs": [
+        0.8926,
+        0.8949,
+        0.8962,
+        0.893,
+        0.8906
+      ],
+      "fairness_std": 0.0019
+    },
+    {
+      "round": 95,
+      "test_acc": 0.8747,
+      "test_loss": 0.3641,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 1268863700,
+      "round_time_s": 56.77,
+      "client_accs": [
+        0.8955,
+        0.8985,
+        0.8948,
+        0.8986,
+        0.8936
+      ],
+      "fairness_std": 0.002
+    },
+    {
+      "round": 96,
+      "test_acc": 0.8801,
+      "test_loss": 0.3533,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 1282220160,
+      "round_time_s": 58.06,
+      "client_accs": [
+        0.8965,
+        0.8952,
+        0.8973,
+        0.8915,
+        0.8915
+      ],
+      "fairness_std": 0.0025
+    },
+    {
+      "round": 97,
+      "test_acc": 0.8752,
+      "test_loss": 0.368,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 1295576620,
+      "round_time_s": 58.12,
+      "client_accs": [
+        0.8912,
+        0.8913,
+        0.8944,
+        0.8917,
+        0.8894
+      ],
+      "fairness_std": 0.0016
+    },
+    {
+      "round": 98,
+      "test_acc": 0.8786,
+      "test_loss": 0.3523,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 1308933080,
+      "round_time_s": 57.09,
+      "client_accs": [
+        0.8948,
+        0.8994,
+        0.8985,
+        0.8948,
+        0.8931
+      ],
+      "fairness_std": 0.0024
+    },
+    {
+      "round": 99,
+      "test_acc": 0.8797,
+      "test_loss": 0.3524,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 1322289540,
+      "round_time_s": 58.11,
+      "client_accs": [
+        0.8945,
+        0.8978,
+        0.8992,
+        0.8972,
+        0.8941
+      ],
+      "fairness_std": 0.002
+    },
+    {
+      "round": 100,
+      "test_acc": 0.8776,
+      "test_loss": 0.358,
+      "round_bytes": 13356460,
+      "cumulative_bytes": 1335646000,
+      "round_time_s": 58.37,
+      "client_accs": [
+        0.8996,
+        0.8973,
+        0.8977,
+        0.8951,
+        0.8936
+      ],
+      "fairness_std": 0.0021
+    }
+  ]
+}
