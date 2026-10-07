@@ -1,4 +1,4 @@
-# Project 0: Federated Learning with NVFLARE
+# Project: Federated Learning with NVFLARE
 ### HiPerGator Implementation — CIFAR-10 Benchmark
 
 **Author:** Nitchaya Reddy
